@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="active" data-section="home">
+                <i class='bx bx-home-alt'></i>
+                <span class="tooltip">Home</span>
+            </li>
+            <li data-section="about">
+                <i class='bx bx-user'></i>
+                <span class="tooltip">About</span>
+            </li>
+            <li data-section="resume">
+                <i class='bx bx-detail'></i>
+                <span class="tooltip">Resume</span>
+            </li>
+            <li data-section="portfolio">
+                <i class='bx bx-briefcase'></i>
+                <span class="tooltip">Portfolio</span>
+            </li>
+            <li data-section="contact">
+                <i class='bx bx-envelope'></i>
+                <span class="tooltip">Contact</span>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="box">
+            <section class="section home active">
+                <div class="home-info">
+                    <h3>Hello I'm</h3>
+                    <h1>HAILEMESKEL YIHUN</h1>
+                    <div class="role-container">
+                        <span class="role role-1">a Full Stack Developer</span>
+                        <span class="role role-2">a UX/UI Designer</span>
+                        <span class="role role-3">a Graphics Designer</span>
+                        <span class="role role-4">a Professional Coder</span>
+                    </div>
+                    <p class="desc">
+                        Founder and COO @ Codebiruh PLC.
+                        Website Application Developer and Graphics Designer
+                        Building digital solutions that bridge technology and business needs
+                        Specializing in responsive web applications with measurable impact
+                    </p>
+                    <div class="btn-sci">
+                        <a href="#" class="btn">Download CV</a>
+                        <div class="sci">
+                            <a href="https://github.com/">
+                                <i class='bx bxl-github'></i>
+                                <span class="tooltip">Github</span>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxl-linkedin'></i>
+                                <span class="tooltip">Linkedin</span>
+                            </a>
+                            <a href="https://t.me/Haile_Yihun">
+                                <i class='bx bxl-telegram'></i>
+                                <span class="tooltip">Telegram</span>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxl-instagram'></i>
+                                <span class="tooltip">Instagram</span>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxl-twitter'></i>
+                                <span class="tooltip">Twitter</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrapper">
+                    <div class="img-box home-img">
+                        <img src="Haila.jpg" alt="Profile Image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section about">
+                <div class="img-wrapper">
+                    <div class="img-box about-img">
+                        <img src="Haila.jpg" alt="About Image">
+                    </div>
+                </div>
+                <div class="about-info">
+                    <h2 class="title">About Me</h2>
+                    <p class="desc">
+                        Hello!🖐 I'm H/meskel Yihun, a computer science student at Bahir Dar University. As a passionate web developer, I specialize in crafting web applications that prioritize seamless performance and intuitive user experiences, with strong skills in HTML, CSS, JavaScript, and React.
+
+                        I've been enhancing my expertise through online courses, starting with HTML and CSS on ALX, then exploring JavaScript and React via Udemy. Currently, I'm focusing on UI/UX design principles at Pluralsight and applying my knowledge to real-world projects for practical experience.
+
+                        Beyond technical skills, I'm a collaborative team player with a keen eye for detail and a strong problem-solving mindset. I'm eager to contribute my skills to a team and create exceptional digital products.
+                    </p>
+                    <a href="#" class="btn">View More</a>
+                </div>
+            </section>
+
+            <section class="section resume">
+                <h2 class="title">Resume</h2>
+                <div class="tab-box">
+                    <div class="tab-list resume-list active" data-tab="experience">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="tab-list resume-list" data-tab="skills">
+                        <h3>Skills</h3>
+                    </div>
+                    <div class="tab-list resume-list" data-tab="education">
+                        <h3>Education</h3>
+                    </div>
+                </div>
+                <div class="tab-wrapper">
+                    <div class="tab-grid resume-box experience active">
+                        <div class="tab-item resume-item">
+                            <h4>2022-present</h4>
+                            <h4>Freelance Web Developer</h4>
+                            <p>
+                                Developed two full websites for organizations as part of Team Code Biruh, focusing on responsive 
+                                design and user-friendly interfaces. Worked on various freelance projects, primarily as a frontend developer,
+                                utilizing HTML, CSS, JavaScript, and React. Participated in local markets to showcase my work and connect 
+                                with potential clients, enhancing my network and gaining valuable feedback on my projects.
+                            </p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2021-present</h4>
+                            <h4>Upwork Translator</h4>
+                            <p>
+                                Worked as a translator on Upwork, delivering high-quality translations for clients in various fields including 
+                                technical documents, marketing materials, and academic papers. Collaborated with a friend to streamline our workflow
+                                and improve the quality of our translations, ensuring timely delivery and client satisfaction.
+                            </p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2025-present</h4>
+                            <h4>Bit-Incubation Center</h4>
+                            <p>
+                                I am currently participating in the Bit-Incubation Center, an innovative hub dedicated to nurturing startups and
+                                fostering entrepreneurship. This experience has provided me with invaluable insights into the startup ecosystem,
+                                allowing me to collaborate with like-minded individuals and gain hands-on experience in business development, 
+                                technology integration, and project management. I am excited to 
+                                contribute to and learn from this dynamic community as we work together to turn ideas into impactful solutions.
+                            </p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2024-present</h4>
+                            <h4>Volunteer Web Developer</h4>
+                            <p>
+                                Volunteered as a web developer for a local non-profit organization, creating a new website to
+                                improve their online presence. Focused on user experience and accessibility, ensuring that the site is
+                                easy to navigate for all users. Received positive feedback from the 
+                                organization for my contributions, which helped them reach a wider audience.For examples Tila voluntary Association 
+                                and Enat Derbrmarkos Charirty Association
+                            </p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2023-present</h4>
+                            <h4>Tutor</h4>
+                            <p>
+                                Tutored high school and preparatory students in Ethiopia, focusing on full-stack programming and STEM subjects.
+                                Developed personalized lesson plans to cater to individual learning styles and needs, helping students improve
+                                their understanding of complex concepts and succeed in their studies. Conducted workshops to introduce 
+                                programming fundamentals and encourage interest in technology among younger students.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-grid resume-box skills">
+                        <div class="skills-container">
+                            <!-- Frontend Skills -->
+                            <div class="skill-category">
+                                <h4>Frontend Development</h4>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-html5'></i>
+                                            <span>HTML5</span>
+                                        </div>
+                                        <span class="skill-percent">95%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="95"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-css3'></i>
+                                            <span>CSS3</span>
+                                        </div>
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-javascript'></i>
+                                            <span>JavaScript</span>
+                                        </div>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-react'></i>
+                                            <span>React.js</span>
+                                        </div>
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-angular'></i>
+                                            <span>Angular</span>
+                                        </div>
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="75"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-vuejs'></i>
+                                            <span>Vue.js</span>
+                                        </div>
+                                        <span class="skill-percent">70%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="70"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-tailwind-css'></i>
+                                            <span>Tailwind CSS</span>
+                                        </div>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-bootstrap'></i>
+                                            <span>Bootstrap</span>
+                                        </div>
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Backend Skills -->
+                            <div class="skill-category">
+                                <h4>Backend Development</h4>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-nodejs'></i>
+                                            <span>Node.js</span>
+                                        </div>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-python'></i>
+                                            <span>Python</span>
+                                        </div>
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-java'></i>
+                                            <span>Java</span>
+                                        </div>
+                                        <span class="skill-percent">70%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="70"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-php'></i>
+                                            <span>PHP</span>
+                                        </div>
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="75"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-django'></i>
+                                            <span>Django</span>
+                                        </div>
+                                        <span class="skill-percent">70%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="70"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-flask'></i>
+                                            <span>Flask</span>
+                                        </div>
+                                        <span class="skill-percent">65%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="65"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Database & Tools -->
+                            <div class="skill-category">
+                                <h4>Database & Tools</h4>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-mongodb'></i>
+                                            <span>MongoDB</span>
+                                        </div>
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-postgresql'></i>
+                                            <span>PostgreSQL</span>
+                                        </div>
+                                        <span class="skill-percent">75%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="75"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-git'></i>
+                                            <span>Git</span>
+                                        </div>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="85"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-github'></i>
+                                            <span>GitHub</span>
+                                        </div>
+                                        <span class="skill-percent">90%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="90"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-figma'></i>
+                                            <span>Figma</span>
+                                        </div>
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="80"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <div class="skill-name">
+                                            <i class='bx bxl-sketch'></i>
+                                            <span>Sketch</span>
+                                        </div>
+                                        <span class="skill-percent">70%</span>
+                                    </div>
+                                    <div class="skill-bar">
+                                        <div class="skill-progress" data-width="70"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-grid resume-box education">
+                        <div class="tab-item resume-item">
+                            <h4>2023</h4>
+                            <h4>Frontend Development Courses</h4>
+                            <h4>ALX and Udacity</h4>
+                            <p>Completed comprehensive courses in Frontend Development, mastering HTML, CSS, and JavaScript. Gained hands-on experience building responsive web applications and learned modern frameworks like React to create dynamic user interfaces.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2022 - Present</h4>
+                            <h4>Backend Development Courses</h4>
+                            <h4>Udemy (Free Courses)</h4>
+                            <p>Engaged in various free online courses focused on backend development. Learned essential programming languages such as Python and Java, along with frameworks like Node.js. Developed RESTful APIs and worked on database management systems.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2021</h4>
+                            <h4>Graphic Design Courses</h4>
+                            <h4>Self-taught & Online Platforms</h4>
+                            <p>Developed skills in graphic design through self-study and online resources. Learned to use design software such as Adobe Photoshop and Illustrator, creating visually appealing projects that combine creativity with technical skills.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2018 - 2020</h4>
+                            <h4>Basic Programming Skills</h4>
+                            <h4>High School Curriculum</h4>
+                            <p>Acquired foundational programming skills in C++ and Java during high school. Participated in coding clubs and competitions, fostering a strong interest in software development and algorithm design.</p>
+                        </div>
+                        
+                        <div class="tab-item resume-item">
+                            <h4>2023</h4>
+                            <h4>Personal Projects</h4>
+                            <h4>Various Platforms</h4>
+                            <p>Initiated personal projects to apply knowledge gained from courses. Developed a portfolio website showcasing my skills in web development and design. Collaborated with peers on open-source projects to enhance coding proficiency and teamwork abilities.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2023 - Present</h4>
+                            <h4>Computer Science Student</h4>
+                            <h4>Bahir Dar University</h4>
+                            <p>Currently enrolled in a Computer Science program with a concentration in software engineering and web development. Engaging in various projects that enhance my programming skills and applying theoretical knowledge in practical settings. Expected graduation in 2025.</p>
+                        </div>
+                        <div class="tab-item resume-item">
+                            <h4>2020 - 2023</h4>
+                            <h4>High School Education</h4>
+                            <h4>Ethio-Japan Secondary highschool Debre Markos School</h4>
+                            <p>Graduated with excellence, maintaining a transcript average above 95 throughout high school. Participated in the STEM-out program, which enhanced my analytical and problem-solving skills through hands-on projects and collaborative learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section portfolio">
+                <h1 class="sub-title">My Portfolio</h1>
+                <h3 class="projects-subtitle">My Projects</h3>
+                <div class="work-list">
+                    <!-- Project 1: Tila Voluntary Website -->
+                    <div class="work">
+                        <img src="./iii.jpg" alt="Tila Voluntary Website">
+                        <h3>Tila Voluntary Association Website</h3>
+                        <p>A platform for volunteers to connect and collaborate on community projects. Built with React.js and Firebase.</p>
+                        <div class="icons">
+                            <a href="https://github.com/haile9-hash/tila-volunteer" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://tila-volunteer.vercel.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+            
+                    <!-- Project 2: Online Learning Study Hub -->
+                    <div class="work">
+                        <img src="./AAA.jpg" alt="Online Learning Hub">
+                        <h3>Online Learning Study Hub</h3>
+                        <p>An interactive platform for students to access courses, quizzes, and study materials. Built with MERN stack.</p>
+                        <div class="icons">
+                            <a href="https://github.com/haile9-hash/Online-plate" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://online-learning.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+            
+                    <!-- Project 6: To-Do List App -->
+                    <div class="work">
+                        <img src="./opopop.jpg" alt="To-Do List App">
+                        <h3>To-Do List App</h3>
+                        <p>A productivity app to manage daily tasks. Built with React.js with features like task filtering and local storage.</p>
+                        <div class="icons">
+                            <a href="https://github.com/haile9-hash/todo-app" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://todo-app-haile.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+            
+                    <!-- Project 3: Snake Game -->
+                    <div class="work">
+                        <img src="./jjj.jpg" alt="Snake Game">
+                        <h3>Snake Game</h3>
+                        <p>A classic Snake game built with JavaScript and HTML5 Canvas. Fun and addictive!</p>
+                        <div class="icons">
+                            <a href="https://github.com/yourusername/snake-game" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://snake-game.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+            
+                    <!-- Project 4: Calculator -->
+                    <div class="work">
+                        <img src="./MN.jpg" alt="Calculator">
+                        <h3>Calculator</h3>
+                        <p>A simple yet powerful calculator app built with JavaScript. Supports basic arithmetic operations.</p>
+                        <div class="icons">
+                            <a href="https://github.com/haile9-hash/calculators" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://calculator.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+            
+                    <!-- Project 5: Quiz App -->
+                    <div class="work">
+                        <img src="./qqqq.jpg" alt="Quiz App">
+                        <h3>Quiz App</h3>
+                        <p>An interactive quiz app with multiple-choice questions. Built with React.js and a JSON-based backend.</p>
+                        <div class="icons">
+                            <a href="https://github.com/yourusername/quiz-app" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://quiz-app.vercel.app" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            
+                <h1 class="projects-subtitle">My Services</h1>
+                <div class="services-list">
+                    <!-- Service 1: Web Development -->
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Custom web development solutions using modern technologies like React, Angular, and Vue.js for frontend, with Node.js and Express for backend. I build responsive, SEO-friendly websites and web applications tailored to your business needs with clean code architecture.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                
+                    <!-- Service 2: UI/UX Design -->
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h2>UI/UX Design</h2>
+                        <p>User-centered interface design focused on creating intuitive digital experiences. Through wireframing, prototyping, and user testing, I deliver visually appealing designs that enhance usability and drive engagement across all devices.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                
+                    <!-- Service 3: Mobile App Development -->
+                    <div>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h2>Mobile App Development</h2>
+                        <p>Cross-platform mobile app development using React Native and Flutter, delivering native-like performance for both iOS and Android. From concept to deployment, I create secure, high-performance applications with offline capabilities.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                
+                    <!-- Service 4: Database Design and Management -->
+                    <div>
+                        <i class="fa-solid fa-database"></i>
+                        <h2>Database Design</h2>
+                        <p>Comprehensive database solutions including SQL (PostgreSQL, MySQL) and NoSQL (MongoDB, Firebase) systems. I design optimized schemas, implement proper indexing, and ensure data security with encryption and backup strategies.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                
+                    <!-- Service 5: Cloud Integration (Firebase) -->
+                    <div>
+                        <i class="fa-solid fa-cloud"></i>
+                        <h2>Cloud Integration</h2>
+                        <p>Full-stack Firebase integration including real-time databases, authentication, cloud functions, and hosting. I implement scalable cloud architectures that ensure high availability and seamless data synchronization across platforms.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                
+                    <!-- Service 6: API Development -->
+                    <div>
+                        <i class="fa-solid fa-network-wired"></i>
+                        <h2>API Development</h2>
+                        <p>Custom RESTful API development with JWT authentication, rate limiting, and comprehensive documentation. I build robust APIs that serve as secure bridges between your frontend applications and database systems.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section contact">
+                <h2 class="title">Contact Me</h2>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
