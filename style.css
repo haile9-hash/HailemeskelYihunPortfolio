@@ -755,6 +755,35 @@ a:hover .tooltip {
     .work-list {
         grid-template-columns: 1fr;
     }
+    .nav {
+    width: 90%;
+    bottom: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .nav-list li {
+    font-size: 2.4rem;
+  }
+    .img-box {
+    width: 60vw;
+    height: 60vw;
+    min-width: 250px;
+    min-height: 250px;
+  }
+    .home, .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+    padding-top: 5rem;
+  }
+  
+  .home-info h1 {
+    font-size: 4rem;
+  }
+  
+  .home-info h3 {
+    font-size: 2.5rem;
+  }
     
     .services-list {
         grid-template-columns: 1fr;
