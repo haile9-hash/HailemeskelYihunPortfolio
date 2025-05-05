@@ -573,7 +573,32 @@ a:hover .tooltip {
     height: 3px;
     background: #4e54c8;
 }
+.project-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
 
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.project-link i {
+    font-size: 1.1em;
+}
 /* Work List Layout - Enhanced */
 .work-list {
     display: grid;
