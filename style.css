@@ -574,174 +574,172 @@ a:hover .tooltip {
     background: #4e54c8;
 }
 
-/* Work List Layout - Enhanced */
+/* Work List */
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 25px;
-    justify-content: center;
-}
-.sub-title{
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
 .work {
-    position: relative;
-    height: auto;
-    min-height: 420px;
+    background: #262626;
+    border-radius: 10px;
     overflow: hidden;
-    border-radius: 12px;
-    background: #1e1e2f;
-    padding: 25px;
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .work:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(78, 84, 200, 0.3);
-    border-color: rgba(78, 84, 200, 0.3);
-}
-
-.work::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(78, 84, 200, 0.1) 0%, transparent 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.work:hover::before {
-    opacity: 1;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .work img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
+    display: block;
 }
 
-.work:hover img {
-    transform: scale(1.03);
+.work-content {
+    padding: 20px;
 }
 
-.work h3 {
-    font-size: 1.6rem;
-    margin: 15px 0;
+.work-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.3rem;
     color: #ffcc00;
-    transition: color 0.3s ease;
 }
 
-.work:hover h3 {
-    color: #8f94fb;
-}
-
-.work p {
-    font-size: 1.5rem;
-    color: #eee;
-    margin-bottom: 20px;
-    line-height: 1.6;
+.work-content p {
+    color: white;
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 .icons {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+    gap: 15px;
 }
 
 .icons a {
-    color: #fff;
-    font-size: 1.4rem;
-    transition: all 0.3s ease;
-    width: 40px;
-    height: 40px;
+    color: #3498db;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
 }
 
 .icons a:hover {
-    color: white;
-    background: #4e54c8;
-    transform: translateY(-3px);
+    color: #2980b9;
+    transform: scale(1.1);
 }
 
-/* Services Section - 3 per row */
+.like-btn {
+    margin-left: auto;
+    color: #e74c3c;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.like-btn:hover {
+    color: #c0392b;
+}
+
+.like-count {
+    font-size: 0.9rem;
+    font-family: sans-serif;
+}
+
+/* Services List */
 .services-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
-.services-list div {
+.service-card {
     background: #262626;
+    border-radius: 10px;
     padding: 30px;
-    border-radius: 12px;
-    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
-.services-list div:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(78, 84, 200, 0.2);
-    background: #2a2a2a;
-    border-color: rgba(78, 84, 200, 0.3);
+.service-card:hover {
+    transform: translateY(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-.services-list i {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    color: #4e54c8;
-    transition: transform 0.3s ease;
+.service-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    color: #3498db;
 }
 
-.services-list div:hover i {
-    transform: scale(1.1);
-    color: #8f94fb;
-}
-
-.services-list h2 {
+.service-card h2 {
     font-size: 1.4rem;
     margin-bottom: 15px;
     color: #ffcc00;
 }
 
-.services-list p {
-    font-size: 1.5rem;
+.service-card p {
+    color: white;
     margin-bottom: 20px;
     line-height: 1.6;
-    color: #ddd;
 }
 
-.services-list a {
-    display: inline-block;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, #4e54c8 0%, #8f94fb 100%);
-    color: white;
-    border-radius: 30px;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
+.service-link {
+    color: #3498db;
     text-decoration: none;
-    box-shadow: 0 4px 15px rgba(78, 84, 200, 0.3);
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
 }
 
-.services-list a:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(78, 84, 200, 0.4);
+.service-link:hover {
+    color: #2980b9;
+}
+
+.service-link i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.service-link:hover i {
+    transform: translateX(3px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .work-list, .services-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .sub-title {
+        font-size: 2rem;
+    }
+    
+    .projects-subtitle {
+        font-size: 1.5rem;
+    }
 }
 
 /* Responsive Adjustments */
@@ -755,6 +753,47 @@ a:hover .tooltip {
     .work-list {
         grid-template-columns: 1fr;
     }
+    .nav {
+        width: 90%;
+        bottom: 1rem;
+        padding: 1rem 0;
+      }
+      
+      .nav-list li {
+        font-size: 2.4rem;
+      }
+      .img-box {
+        width: 60vw;
+        height: 60vw;
+        min-width: 250px;
+        min-height: 250px;
+      }
+      .home, .about {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+        padding-top: 5rem;
+      }
+      
+      .home-info h1 {
+        font-size: 4rem;
+      }
+      
+      .home-info h3 {
+        font-size: 2.5rem;
+      }
+      .section {
+        padding: 6rem 5% 2rem;
+      }
+      
+      .title {
+        font-size: 3rem;
+      }
+      
+      .btn {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+      }     
     
     .services-list {
         grid-template-columns: 1fr;
